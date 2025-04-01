@@ -29,7 +29,36 @@
                  <li><a href="#" onclick="toggleSection('spenden-form-section')">Spendenformular</a></li>
              </ul>
          </nav>
- 
+         
+         <section id="spenden-form-section">
+            <h2>Registriere deine Kleiderspende</h2>
+            <form id="spenden-form">
+                <label for="kleidungsart">Art der Kleidung:</label>
+                <input type="text" id="kleidungsart" name="kleidungsart" required>
+
+                <label for="krisengebiet">Krisengebiet:</label>
+                <select id="krisengebiet" name="krisengebiet" required>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Kenia">Kenia</option>
+                    <option value="Syrien">Syrien</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                </select>
+
+                <label for="übergabe">Übergabeoption:</label>
+                <select id="übergabe" name="übergabe" required onchange="handleUbergabeChange()">
+                    <option value="bringen">Ich bringe die Spende</option>
+                    <option value="abholen">Ich möchte die Spende abholen lassen</option>
+                </select>
+
+                <div id="adressContainer"></div>
+
+                <div id="confirmationMessage" class="hidden success-message">
+                    Registrierung erfolgreich eingegangen!
+                </div>
+
+                <button type="submit">Spende registrieren</button>
+            </form>
+        </section 
          <section id="leistungen" class="hidden">
              <h2>Unsere Leistungen</h2>
              <p>Wir nehmen Ihre Kleiderspende entgegen und kümmern uns um den Transport ins gewünschte Krisengebiet.</p>
