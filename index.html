@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+ <html lang="de">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <title>Homepage Kleiderspende Registrierung</title>
+     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css">
+     <link rel="stylesheet" href="css/style.css">
+ </head>
+ 
+ <body>
+     <header>
+         <nav>
+             <ul>
+                 <li><a href="#">Startseite</a></li>
+                 <li><a href="https://www.instagram.com/KleiderspendeRegistrierung">Instagram</a></li>
+                 <li><a href="https://www.facebook.com/KleiderspendeRegistrierung">Facebook</a></li>
+                 <li><a href="contact.html">Kontakt</a></li>
+             </ul>
+         </nav>
+     </header>
+ 
+     <main>
+         <nav>
+             <ul>
+                 <li><a href="#" onclick="toggleSection('leistungen')">Unsere Leistungen</a></li>
+                 <li><a href="#" onclick="toggleSection('standort')">Unser Standort</a></li>
+                 <li><a href="#" onclick="toggleSection('about')">Über uns</a></li>
+                 <li><a href="#" onclick="toggleSection('spenden-form-section')">Spendenformular</a></li>
+             </ul>
+         </nav>
+ 
+         <section id="leistungen" class="hidden">
+             <h2>Unsere Leistungen</h2>
+             <p>Wir nehmen Ihre Kleiderspende entgegen und kümmern uns um den Transport ins gewünschte Krisengebiet.</p>
+         </section>
+ 
+         <section id="standort" class="hidden">
+             <h2>Unser Standort</h2>
+             <p>Stolzestrasse 29, 30171 Hannover. Geöffnet von 09:00-13:00 Uhr.</p>
+         </section>
+ 
+         <section id="about" class="hidden">
+             <h2>Über uns</h2>
+             <p>Wir haben vor drei Jahren eine Kleiderspendeaktion gestartet, die sich mittlerweile zu einem Start-up entwickelt hat.</p>
+         </section>
+     </main>
+ 
+     <footer>
+         <nav>
+             <ul>
+                 <li><a href="privacy.html">Datenschutz</a></li>
+                 <li><a href="imprint.html">Impressum</a></li>
+             </ul>
+         </nav>
+     </footer>
+ 
+     <script src="js/script.js"></script>
+ </body>
+ </html>
