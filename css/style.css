@@ -14,3 +14,14 @@ body {
      padding: 10px 0;
      width: 100%;
  }
+
+.hidden {
+     display: none;
+ }
+
+.success-message {
+     color: green;
+     font-weight: bold;
+     margin-top: 10px;
+}
+
