@@ -9,10 +9,6 @@ function toggleSection(sectionId) {
     });
   }
 
-    const section = document.getElementById(sectionId);
-    section.classList.toggle('hidden');
-}
-
 function handleUbergabeChange() {
     const ubergabeSelect = document.getElementById("übergabe");
     const adressContainer = document.getElementById("adressContainer");
