@@ -39,6 +39,23 @@ function handleUbergabeChange() {
     }
 }
 
+function validateAddress() {
+    const inputs = document.querySelectorAll('#adressContainer input');
+    let valid = true;
+
+    inputs.forEach(input => {
+        if (input.value.trim() === "") {
+            valid = false;
+            input.classList.add("invalid"); 
+        } else {
+            input.classList.remove("invalid");
+        }
+    });
+
+    return valid;
+}
+
+
 document.getElementById("spenden-form").addEventListener("submit", function(event) {
     event.preventDefault(); // Verhindert Neuladen der Seite
 
