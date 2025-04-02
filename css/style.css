@@ -32,3 +32,5 @@ nav a, footer a {
 nav a:hover, footer a:hover {
     color: #b22222;
 }
+input.invalid {
+    border: 2px solid red;
