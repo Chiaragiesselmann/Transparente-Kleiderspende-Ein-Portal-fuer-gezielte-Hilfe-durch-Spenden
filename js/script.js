@@ -1,7 +1,7 @@
-function toggleSection(sectionId) {
+function toggleSection(sectionID) {
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
-        if (section.id !== sectionId) {
+        if (section.id !== sectionID) {
             section.classList.add('hidden');
         }
        
