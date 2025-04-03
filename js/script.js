@@ -2,14 +2,11 @@ function toggleSection(sectionID) {
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
         if (section.id !== sectionID) {
-            section.classList.remove('hidden');
-        } else {
             section.classList.add('hidden');
+        } else {
+            section.classList.remove('hidden');
         }
     });
-    
-    const section = document.getElementById(sectionID);
-    section.classList.toggle('hidden');
 
 }
 
