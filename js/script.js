@@ -1,5 +1,5 @@
 function toggleSection(sectionId) {
-    const sections = document.getElementById(sectionId);
+    const section = document.getElementById(sectionId);
          if (section) {
              section.classList.toggle('hidden');
          } 
