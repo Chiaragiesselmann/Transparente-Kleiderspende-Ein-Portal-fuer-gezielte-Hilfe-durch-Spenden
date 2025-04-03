@@ -1,14 +1,9 @@
 function toggleSection(sectionId) {
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        if (section.id !== sectionId) {
-            section.classList.add('hidden');
+    const sections = document.getElementById(sectionId);
+    if (section) {
+        section.classList.toggle('hidden');
         }
-    });
-
-    const section = document.getElementById(sectionId);
-    section.classList.toggle('hidden');
-}
+    }
 
 function handleUbergabeChange() {
     const ubergabeSelect = document.getElementById("übergabe");
