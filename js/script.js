@@ -1,10 +1,10 @@
 function toggleSection(sectionId) {
     const sections = document.getElementById(sectionId);
-    if (section) {
-        section.classList.toggle('hidden');
-        }
-    }
-
+         if (section) {
+             section.classList.toggle('hidden');
+         } 
+     }
+    
 function handleUbergabeChange() {
     const ubergabeSelect = document.getElementById("übergabe");
     const adressContainer = document.getElementById("adressContainer");
