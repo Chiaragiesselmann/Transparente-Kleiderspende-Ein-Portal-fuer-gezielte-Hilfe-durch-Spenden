@@ -3,7 +3,9 @@ function toggleSection(sectionID) {
     sections.forEach(section => {
         if (section.id !== sectionID) {
             section.classList.add('hidden');
-        }
+        } else {
+            section.classList.remove('hidden');
+        }    
        
     });
     const section = document.getElementById(sectionID);
