@@ -1,14 +1,15 @@
-
 function toggleSection(sectionId) {
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
         if (section.id !== sectionId) {
-            section.classList.add('hidden');
+            section.style.display = "none";
+        }else if (section.id == sectionId){
+             section.style.display = "inline"; 
         }
     });
 
-    const section = document.getElementById(sectionId);
-    section.classList.toggle('hidden');
+  /*   const section = document.getElementById(sectionId);
+    section.classList.toggle('hidden'); */
 }                   
     
 function handleUbergabeChange() {
