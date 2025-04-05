@@ -3,8 +3,15 @@ body {
      flex-direction: column;
      min-height: 100vh;
  }
-
-
+ #leistungen{
+    display: none;
+ } 
+ #standort{
+    display: none;
+ } 
+ #about{
+    display: none;
+ }
 .logo {
      width: 120px;
      height: auto;
@@ -17,7 +24,7 @@ header nav ul {
 }
 header nav ul li{ 
      list-style: none;
-     
+}     
  main {
      flex: 1;
  }
@@ -28,11 +35,6 @@ header nav ul li{
      padding: 10px 0;
      width: 100%;
  }
-
-.hidden {
-     display: none;
- }
-
 .success-message {
      color: green;
      font-weight: bold;
