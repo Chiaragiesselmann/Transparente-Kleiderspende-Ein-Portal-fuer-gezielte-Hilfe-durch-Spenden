@@ -1,6 +1,3 @@
-window.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("confirmationMessage").classList.add("hidden");
-});
 
 function toggleSection(sectionId) {
     const sections = document.querySelectorAll('section');
