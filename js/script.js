@@ -3,18 +3,16 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function toggleSection(sectionId) {
-    const allSections = document.querySelectorAll('main > section');
-    allSections.forEach(sec => {
-             if (sec.id !== sectionId) {
-                sec.classList.add('hidden');
-         } 
-     });
-const section = document.getElementById(sectionId);
-if (section) {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        if (section.id !== sectionId) {
+            section.classList.add('hidden');
+        }
+    });
+
+    const section = document.getElementById(sectionId);
     section.classList.toggle('hidden');
-    }
-}
-                        
+}                   
     
 function handleUbergabeChange() {
     const ubergabeSelect = document.getElementById("übergabe");
