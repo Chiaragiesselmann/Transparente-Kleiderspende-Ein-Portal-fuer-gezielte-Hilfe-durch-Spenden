@@ -12,6 +12,12 @@ body {
  #about{
     display: none;
  }
+ #impressum{
+    display: none;
+ }
+ #datenschutz{
+    display: none;
+ }
 .logo {
      width: 120px;
      height: auto;
@@ -29,17 +35,11 @@ header nav ul li{
      flex: 1;
  }
  footer {
-     background-color: #333;
      color: #fff;
      text-align: center;
      padding: 10px 0;
      width: 100%;
  }
-.success-message {
-     color: green;
-     font-weight: bold;
-     margin-top: 10px;
-}
 nav a, footer a {
     text-decoration: none;
     color: black;
@@ -50,4 +50,21 @@ nav a:hover, footer a:hover {
 }
 input.invalid {
     border: 2px solid red;
-}     
+}
+#confirmationMessage{
+    visibility: hidden;  
+    min-width: 250px; 
+    margin-left: -125px; 
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px; 
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px; 
+}
+#confirmationMessage.show {
+    visibility: visible; 
+}
