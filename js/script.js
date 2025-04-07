@@ -7,11 +7,13 @@ function toggleSection(sectionId) {
              section.style.display = "inline"; 
         }
     });
-
-  /*   const section = document.getElementById(sectionId);
-    section.classList.toggle('hidden'); */
 }                   
-    
+function onSubmit(sectionId) {
+    var snackbar = document.getElementById("confirmationMessage");
+    snackbar.className = "show";
+    // After 3 seconds stopp show
+    setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
+}       
 function handleUbergabeChange() {
     const ubergabeSelect = document.getElementById("übergabe");
     const adressContainer = document.getElementById("adressContainer");
