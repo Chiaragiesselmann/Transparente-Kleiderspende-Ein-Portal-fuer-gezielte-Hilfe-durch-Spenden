@@ -17,28 +17,15 @@
                      <img src="img/logo.png" alt="Kleiderspende Logo" class="logo">
                   </a>
                  </li>
-                 <li>
-                     <form>
-                      <input type="text" name="suche" placeholder="Suche">
-                     </form>
-                 </li>
-                 <li><a href="https://www.instagram.com/KleiderspendeRegistrierung">Instagram</a></li>
-                 <li><a href="https://www.facebook.com/KleiderspendeRegistrierung">Facebook</a></li>
-                 <li><a href="contact.html">Kontakt</a></li>
-             </ul>
-         </nav>
-     </header>
- 
-     <main>
-         <nav>
-             <ul>
                  <li><a href="#" onclick="toggleSection('leistungen')">Unsere Leistungen</a></li>
                  <li><a href="#" onclick="toggleSection('standort')">Unser Standort</a></li>
                  <li><a href="#" onclick="toggleSection('about')">Über uns</a></li>
                  <li><a href="#" onclick="toggleSection('spenden-form-section')">Spendenformular</a></li>
-             </ul>
+           </ul>
          </nav>
-         
+     </header>
+ 
+     <main>     
          <section id="spenden-form-section">
             <h2>Registriere deine Kleiderspende</h2>
             <form id="spenden-form">
@@ -60,12 +47,8 @@
                 </select>
 
                 <div id="adressContainer"></div>
-
-                <div id="confirmationMessage" class="hidden success-message">
-                    Registrierung erfolgreich eingegangen!
-                </div>
-             
-                <button type="submit">Spende registrieren</button>
+                <button type="submit" onclick="onSubmit()">Spende registrieren</button>
+                <div id="confirmationMessage">Registrierung eingegangen!</div>
             </form>
         </section >
          <section id="leistungen" class="section">
@@ -73,7 +56,7 @@
              <p>Wir nehmen Ihre Kleiderspende entgegen und kümmern uns um den Transport ins gewünschte Krisengebiet.</p>
          </section>
  
-         <section id="standort" class="sectionn">
+         <section id="standort" class="section">
              <h2>Unser Standort</h2>
              <p>Stolzestrasse 29, 30171 Hannover. Geöffnet von 09:00-13:00 Uhr.</p>
          </section>
@@ -82,13 +65,77 @@
              <h2>Über uns</h2>
              <p>Wir haben vor drei Jahren eine Kleiderspendeaktion gestartet, die sich mittlerweile zu einem Start-up entwickelt hat.</p>
          </section>
+         <section id="impressum" class="section">
+            <h2>Impressum</h2>
+            <p>
+                <strong>Angaben gemäß § 5 TMG</strong>
+            </p>
+            <p> Max Mustermann <br>
+                Musterstraße 12<br>
+                12345 Musterstadt<br>
+                Deutschland
+            </p>
+            <p>
+                <strong>Kontakt</strong>
+            </p>
+            <p>
+                Telefon: +49 (0)123 456789<br>
+                E-Mail: <a href="mailto:max@mustermann.de">max@mustermann.de</a>
+            </p>
+            <p>
+                <strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</strong>
+            </p>
+            <p>
+                Max Mustermann<br>
+                Musterstraße 12<br>
+                12345 Musterstadt
+            </p>
+            <p>
+                <strong>Haftungsausschluss</strong>
+            </p>
+            <p>
+                Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.
+                Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+            </p>
+        </section>
+        <section id="datenschutz" class="section">
+            <h2>Datenschutzerklärung</h2>
+            <p>
+                <strong>1. Datenschutz auf einen Blick</strong>
+            </p>
+            <p>
+              Der Schutz Ihrer persönlichen Daten ist uns wichtig. Nachfolgend informieren wir Sie darüber, welche Daten auf dieser Website erfasst und wie sie verwendet werden.
+            </p>
+            <p>
+                <strong>2. Allgemeine Hinweise</strong>
+            </p>
+            <p>
+              Die Nutzung unserer Website ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (z. B. Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies stets auf freiwilliger Basis.
+            </p>
+            <p>
+                <strong>3. Auskunft, Löschung, Sperrung</strong>
+            </p>
+            <p>
+              Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung. Ebenso haben Sie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.
+            </p>
+            <p>
+                <strong>4. Widerspruch gegen Werbe-Mails</strong>
+            </p>
+            <p>
+              Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen.
+            </p>
+        </section>
      </main>
  
      <footer>
          <nav>
              <ul>
-                 <li><a href="privacy.html">Datenschutz</a></li>
-                 <li><a href="imprint.html">Impressum</a></li>
+                 <li><a href="#"><a onclick="toggleSection('datenschutz')">Datenschutz</a></li>
+                 <li><a href="#">
+                    <a onclick="toggleSection('impressum')">Impressum </a>
+                </li>
+                <li><a href="https://www.instagram.com/KleiderspendeRegistrierung">Instagram</a></li>
+                <li><a href="https://www.facebook.com/KleiderspendeRegistrierung">Facebook</a></li>
              </ul>
          </nav>
      </footer>
